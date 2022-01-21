@@ -1,26 +1,33 @@
 - profile:
-  initials: JD
-  name: John Doe
-  profession: Web Developer
+  initials: HB
+  name: Hajali Bayramov
+  profession: Data Scientits/Engineer
   image: images/profile.jpg
-  location: New York, USA
+  location: Turin, Italy
   relocation: true
-  company: Atomic Studio
+  company: Piazza dei Mestieri
   for_hire: true
-  focus: Learning Gatsby
-  focus_url: https://gatsbyjs.org
-  about: |
-    Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
+  focus: Improving Deep Learning
+  focus_url: https://www.tensorflow.org/
+  about:
+   Currently studying M.Sc. in Data Science and Engineering at DAUIN, Polytechnic University of Turin. I did my B.Eng in Process Automation Engineering in Baku Higher Oil School. 
+   
+   I most enjoy solving problems that require my data modeling, analytics, and
+   solution architecture expertise. Data Scientist professional with 5+ years of experience in programming and 
+   proven research and communication skills. Managed to have high scores >90%) in academic life. Looking for an 
+   opportunity in a dynamic organization where my skills will be fully utilized.  
 
-    User generated content in real-time will have multiple touchpoints for offshoring. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
   skills:
-    - JavaScript
-    - HTML / CSS
-    - Ruby on Rails
+    - Machine Learning
+    - Deep Learning
+    - Big Data
   tools:
-    - React
-    - VSCode
-    - Gatsby
+    - Python
+    - NoSQL/SQL
+    - Spark & RDD
+    - JSON
+    - PowerBI/Tableau
+
   budget:
     currency: $
     min: 5

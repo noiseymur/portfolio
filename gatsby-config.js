@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/portfolio",
+  pathPrefix: "/",
   plugins: [
     {
       resolve: "@wkocjan/gatsby-theme-intro",
