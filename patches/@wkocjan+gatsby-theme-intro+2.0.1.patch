@@ -1,0 +1,82 @@
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/gatsby-config.js b/node_modules/@wkocjan/gatsby-theme-intro/gatsby-config.js
+index 894fce4..0b806da 100644
+--- a/node_modules/@wkocjan/gatsby-theme-intro/gatsby-config.js
++++ b/node_modules/@wkocjan/gatsby-theme-intro/gatsby-config.js
+@@ -6,11 +6,11 @@ module.exports = ({
+ }) => {
+   return {
+     siteMetadata: {
+-      description: "Personal page of John Doe",
++      description: "Personal page of Hajali Bayramov",
+       locale: "en",
+       showThemeLogo,
+-      title: "John Doe",
+-      formspreeEndpoint: "https://formspree.io/f/{your-id}",
++      title: "Hajali Bayramov",
++      formspreeEndpoint: "https://formspree.io/f/myyokekj",
+     },
+     plugins: [
+       {
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/contact-form/contact-form.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/contact-form/contact-form.js
+index 7f2157d..a6c5d20 100644
+--- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/contact-form/contact-form.js
++++ b/node_modules/@wkocjan/gatsby-theme-intro/src/components/contact-form/contact-form.js
+@@ -41,22 +41,14 @@ const ContactForm = ({ formspreeEndpoint, budget }) => {
+             />
+           </div>
+           <div className="w-full lg:w-1/3 py-px lg:px-px">
+-            <div className="form-control bg-back-light">
+-              <label className="cursor-pointer select-none">
+-                <input
+-                  className="hidden"
+-                  name="inquiry"
+-                  onChange={() => setIsInquiry(!isInquiry)}
+-                  type="checkbox"
+-                />
+-                <span className="relative inline-block border-2 align-middle mr-2 -mt-1 border-back w-5 h-5">
+-                  {isInquiry && (
+-                    <span className="absolute inline-block bg-lead inset-0 m-1"></span>
+-                  )}
+-                </span>
+-                <span className="text-front opacity-50 uppercase">Inquiry</span>
+-              </label>
+-            </div>
++            <input
++              aria-label="Phone number"
++              autoComplete="tel"
++              className="form-input"
++              name="phone"
++              placeholder="PHONE NUMBER"
++              type="tel"
++            />
+           </div>
+         </div>
+ 
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js
+index cb65a9f..f6ed2c8 100644
+--- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js
++++ b/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js
+@@ -7,6 +7,7 @@ const Header = ({ initials }) => (
+     <span className="inline-flex w-14 h-14 lg:mt-4 font-header font-bold text-xl justify-center items-center text-center text-front border-2 border-solid border-front rounded-full">
+       {initials}
+     </span>
++    <div>
+     <a
+       className="flex w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
+       href="#contact"
+@@ -14,6 +15,15 @@ const Header = ({ initials }) => (
+       <FaEnvelope className="inline-block h-6 w-6 lg:hidden" />
+       <span className="hidden lg:block">Contact me</span>
+     </a>
++    <a
++      className="flex w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
++      href="Resume_Hajali_BayramovV3.pdf"
++      type="application/pdf"
++    >
++      <span className="hidden lg:block">Resume</span>
++    </a>
++    </div>
++    
+   </header>
+ )
+ 
