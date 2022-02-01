@@ -53,10 +53,18 @@ index 7f2157d..a6c5d20 100644
          </div>
  
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js
-index cb65a9f..f6ed2c8 100644
+index cb65a9f..be30a54 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js
 +++ b/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js
-@@ -7,6 +7,7 @@ const Header = ({ initials }) => (
+@@ -1,5 +1,7 @@
+ import React from "react"
+ import { FaEnvelope } from "react-icons/fa"
++import { FaIdCard } from "react-icons/fa"
++
+ import { ProfileType } from "../../types"
+ 
+ const Header = ({ initials }) => (
+@@ -7,6 +9,7 @@ const Header = ({ initials }) => (
      <span className="inline-flex w-14 h-14 lg:mt-4 font-header font-bold text-xl justify-center items-center text-center text-front border-2 border-solid border-front rounded-full">
        {initials}
      </span>
@@ -64,15 +72,17 @@ index cb65a9f..f6ed2c8 100644
      <a
        className="flex w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
        href="#contact"
-@@ -14,6 +15,15 @@ const Header = ({ initials }) => (
+@@ -14,6 +17,17 @@ const Header = ({ initials }) => (
        <FaEnvelope className="inline-block h-6 w-6 lg:hidden" />
        <span className="hidden lg:block">Contact me</span>
      </a>
 +    <a
 +      className="flex w-14 h-14 font-header font-semibold px-2 bg-lead rounded-full text-lead-text justify-center items-center leading-tight lg:w-auto lg:h-auto lg:px-6 lg:py-2 lg:rounded-lg lg:self-start lg:mt-4 hover:opacity-75 transition-opacity duration-150"
-+      href="Resume_Hajali_BayramovV3.pdf"
 +      type="application/pdf"
++      id = "resume-btn"
++      onClick={()=>window.open('assets/Resume_Hajali_Bayramov.pdf')}
 +    >
++      <FaIdCard className="inline-block h-6 w-6 lg:hidden" />
 +      <span className="hidden lg:block">Resume</span>
 +    </a>
 +    </div>
