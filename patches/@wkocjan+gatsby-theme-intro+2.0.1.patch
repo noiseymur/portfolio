@@ -53,7 +53,7 @@ index 7f2157d..a6c5d20 100644
          </div>
  
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js
-index cb65a9f..be30a54 100644
+index cb65a9f..53b9648 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js
 +++ b/node_modules/@wkocjan/gatsby-theme-intro/src/components/header/header.js
 @@ -1,5 +1,7 @@

@@ -1,0 +1,7 @@
+- "git pull"
+- change node_module
+- patch "npx patch-package @wkocjan/gatsby-theme-intro"
+- "gatsby build" ("gatsby develop" for development)
+- "git add ."
+- "git commit -m 'message'"
+- npm run deploy
